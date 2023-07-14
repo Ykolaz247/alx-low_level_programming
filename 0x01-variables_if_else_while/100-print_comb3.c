@@ -10,15 +10,15 @@ int main(void)
 	int n = '0';
 	int m = '0';
 
-	for (n = '0'; n <= '9'; n++)
+	for (m = '0'; m <= '9'; m++)
 	{
-		for (m = '0'; m <= '9'; m++)
+		for (n = '0'; n <= '9'; n++)
 		{
-			if (!((m == n) || (n > m)))
+			if (!((n == m) || (m > n)))
 			{
 				putchar(m);
 				putchar(n);
-				if (!(n == '9' &&  m == '8'))
+				if (!(n == '9' && m == '8'))
 				{
 					putchar(',');
 					putchar(' ');
@@ -26,6 +26,7 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
